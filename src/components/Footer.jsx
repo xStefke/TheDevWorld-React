@@ -3,7 +3,13 @@
 import {Twitter, Facebook, Instagram, Linkedin, Mail} from "lucide-react";
 import SocialIcon from "./SocialIcon";
 import logoImg from "../img/logo/logo.png";
-
+const usefulLinks = [
+    { label: "Home", href: "#home" },
+    { label: "About us", href: "#about" },
+    { label: "Speakers", href: "#speakers" },
+    { label: "Schedule", href: "#schedule" },
+    { label: "Tickets", href: "#tickets" }
+];
 const socialLinks = [
     {icon: <Twitter size={20}/>, href: "#"},
     {icon: <Facebook size={20}/>, href: "#"},
@@ -37,13 +43,13 @@ export default function Footer() {
                 <div>
                     <h2 className="font-bebas text-[32px]">Useful Links</h2>
                     <ul className="flex flex-col gap-2 opacity-90">
-                        {["Home", "About us", "Speakers", "Schedule", "Tickets"].map((txt, i) => (
+                        {usefulLinks.map((link, i) => (
                             <li key={i}>
                                 <a
-                                    href="#"
+                                    href={link.href}
                                     className="flex items-center gap-2 hover:text-[#FFBD00] transition"
                                 >
-                                    <span className="text-[#FFBD00]">›</span> {txt}
+                                    <span className="text-[#FFBD00]">›</span> {link.label}
                                 </a>
                             </li>
                         ))}
