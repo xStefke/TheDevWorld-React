@@ -7,7 +7,7 @@ export default function Newsletter() {
                 updates!</h3>
             <form action="" className="flex flex-col items-center justify-center w-[350px] mt-5 lg:mt-10">
                 <input type="email" className="w-full rounded-3xl h-10 pl-5 bg-white" placeholder="Enter your email"/>
-                <button type="submit"
+                <button type="submit" onClick={(e)=>  e.preventDefault()}
                         className="bg-[#FFBD00] text-white rounded-[100px] transition-all duration-300 ease-in-out border border-solid border-[#FFBD00]  hover:bg-transparent hover:border text-center cursor-pointer w-full px-2 py-1 mt-4 text-[24px] lg:text-[32px] font-bebas">SUBSCRIBE
                 </button>
             </form>

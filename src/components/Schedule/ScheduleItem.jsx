@@ -1,6 +1,6 @@
 export default function ScheduleItem({speaker}) {
     return (
-        <li className="flex flex-col lg:flex-row justify-between items-center gap-4 px-5 py-7 border-b border-[#ffffff46] hover:bg-[#45345d] last:border-none">
+        <li className="flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-4 px-5 py-7 border-b border-[#ffffff46] hover:bg-[#45345d] last:border-none">
 
             {speaker.img && (
                 <img
