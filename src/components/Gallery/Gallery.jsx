@@ -15,7 +15,7 @@ export default function Gallery() {
     setActiveIndex((i) => (i === 0 ? galleryImages.length - 1 : i - 1));
 
   return (
-    <div className="py-[3.5rem]">
+    <div className="py-14">
       <h2 className="font-bebas text-[64px] text-white text-center mb-12">
         GALLERY
       </h2>
@@ -37,7 +37,7 @@ export default function Gallery() {
           style={{ backgroundImage: `url(${galleryBg})` }}
         >
           <div className="absolute bg-[#0b0016a7] w-full h-full top-0 left-0 z-0"></div>
-          <div className="relative z-10 p-8 lg:p-[4rem]">
+          <div className="relative z-10 p-8 lg:p-16">
             <h3 className="font-bebas text-[32px] text-(--primary-color)">
               Tami Residence Conference Center, Nis
             </h3>
@@ -69,7 +69,7 @@ export default function Gallery() {
       {/* Modal */}
       {activeIndex !== null && (
         <div
-          className="fixed inset-0 bg-black/60 flex justify-center items-center z-[2000]"
+          className="fixed inset-0 bg-black/60 flex justify-center items-center z-2000"
           onClick={closeModal}
         >
           {/* Close button */}

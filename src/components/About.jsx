@@ -15,7 +15,7 @@ export default function About() {
               CONFERENCE
             </h2>
 
-            <BuyTicket className="text-[24px] lg:text-[32px] py-2 lg:py-[12px] px-[35px] w-full md:w-[75%] mt-6 md:mt-0">
+            <BuyTicket className="text-[24px] lg:text-[32px] py-2 lg:py-3 px-[35px] w-full md:w-[75%] mt-6 md:mt-0">
               GET YOUR TICKET
             </BuyTicket>
           </div>

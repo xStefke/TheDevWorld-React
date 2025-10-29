@@ -24,7 +24,6 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-6">
         {/* Lef side */}
         <div>
-          <Facebook />
           <img src={logoImg} alt="Logo" className="w-44 mb-4" />
           <p className="text-sm opacity-80">
             TheDevWorld is a 3-day conference dedicated to innovation...
