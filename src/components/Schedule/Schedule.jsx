@@ -18,7 +18,7 @@ export default function Schedule() {
                         <button
                             key={day}
                             className={`${baseClass} ${
-                                activeDay === day ? "bg-[#FFBD00]" : "bg-[#2D223C]"
+                                activeDay === day ? "bg-(--primary-color)" : "bg-[#2D223C]"
                             }`}
                             onClick={() => setActiveDay(day)}
                         >
